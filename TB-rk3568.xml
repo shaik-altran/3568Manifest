@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+   <remote name="github" fetch="https://github.com" />
+   <remote name="u-boot" fetch="https://gitlab.denx.de/u-boot" />
+   
+   <default remote="github" revision="master" />
+   
+   <project path="rkbin" name="rockchip-toybrick/rkbin.git" revision="refs/heads/develop-11.0" />
+   <project path="u-boot" name="u-boot.git" revision="refs/tags/v2022.01" remote="u-boot" />
+   <project path="build" name="shaik-altran/Shaik-codes/rk_3568build.git">
+      <linkfile src="TB-rk3568.mk" dest	="build/Makefile" />
+   </project>
+   
+</manifest>
